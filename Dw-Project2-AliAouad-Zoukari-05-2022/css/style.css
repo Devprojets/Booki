@@ -1,0 +1,626 @@
+
+/*  CREATION DE LA PARTIE CSS*/
+
+html {
+  font-family: raleway, sans-serif;
+  scroll-behavior: smooth;
+  margin: 0;
+  
+}
+
+
+/* On définit le CSS DE LA PARTIE HEADER  donc le logo et la barre de navigation*/
+
+body {
+  margin-left: 30px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+header .logo {
+  padding: 25px 0px;
+}
+
+header .logo img {
+  width: 150px;
+}
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+}
+
+header nav ul li {
+  padding: 50px 25px;
+  border-top: 4px solid transparent;
+  margin: 0px 20px 0px 20px;
+}
+
+header nav ul li:hover {
+  border-color: #0065FC;
+}
+
+header nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+header nav ul li:hover a {
+  color: #0065FC;
+}
+
+
+
+
+h1 {
+  margin-bottom: 0px
+}
+
+/* La partie 1 donc partie title et recherche et filtres*/
+
+.affichplus {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.recherche {
+  display: inline-block;
+
+  border-radius: 15px;
+  width: auto;
+}
+
+.recherche .fa-map-marker-alt {
+  display: inline-block;
+  padding: 14px;
+  height: 28px;
+  font-size: 25px;
+  background-color: #f2f2f2;
+  border-radius: 15px 0px 0px 15px;
+}
+
+.recherche input {
+  outline: none;
+  height: 52px;
+  
+  margin-left: -5px;
+  border: none;
+  padding: 10px;
+}
+
+.recherche .boutton {
+  background-color: #0065FC;
+  color: white;
+  height: 52px;
+  border: none;
+  border-radius: 0px 15px 15px 0px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+
+.recherche .boutton .textrech {
+  font-style : normal;
+  
+}
+
+
+
+
+.filtre {
+  display: flex;
+  align-items: center;
+}
+
+.filtre .sousfiltre {
+  margin: 0px 10px;
+  border-radius: 30px;
+  border: 2px solid #f2f2f2;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  background-color:#DEEBFF;
+}
+
+.filtre .sousfiltre i {
+  background-color: #0065FC;
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  border-radius: 100%;
+  color: #DEEBFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.filtre .sousfiltre .textfiltre {
+  padding: 0px 10px;
+}
+
+
+.information {
+  display: flex;
+}
+
+.information .fas.fa-info {
+  background-color: #0065FC;
+  border: 1px solid #f2f2f2;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+/* La partie 2 donc pour les hébergements */
+
+.bloc1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bloc1 h2 {
+  margin-top: 0px;
+}
+
+.bloc1 .avanttitle {
+  background-color: #f2f2f2;
+  padding: 20px 20px 10px 20px;
+  border-radius: 20px;
+  height: 95%;
+  box-sizing: content-box;
+}
+
+.cubes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cubes a {
+  width: 30%;
+  margin-bottom: 50px;
+}
+
+.cubes a .apparts {
+  background-color: white;
+  padding: 6px;
+  border-radius: 25px;
+  height: 100%;
+}
+
+
+
+.cubes a .apparts .fa-star.bleu{
+  color: #0065FC;
+}
+
+.cubes a .apparts .fa-star #f2f2f2 {
+  color: #f2f2f2;
+}
+
+.cubes a .apparts img {
+  width: 100%;
+  height: 200px;
+  border-radius: 25px 25px 0px 0px;
+  object-fit: cover;
+}
+
+.cubes a {
+  color: black;
+  text-decoration: none;
+}
+
+.cubes a .apparts .ttappart {
+  padding: 10px 10px 0px 10px;
+}
+
+
+.cubes a .apparts .ttappart p {
+  margin: 6px;
+}
+
+
+.subtitle{
+  margin-bottom: 30px;
+  font-size:20px;
+  font-weight: bold;
+}
+
+
+.bloc1 .heberg {
+  width: 60%;
+}
+
+.bloc1 .heberg .detail1 {
+  font-weight: bold;
+  font-size: 120%;
+}
+
+/*Pour définir la couleur des étoiles  */
+
+.bleu{
+  color:#0065FC;
+}
+
+.gris{
+  color: grey;
+}
+/* La partie pour définir les hébergements populaires */
+
+.bloc1 .pop .chart-icone {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.bloc1 .pop {
+  width: 35%;
+  position: relative;
+}
+
+.bloc1 .pop .cubes {
+  flex-direction: column;
+}
+
+.bloc1 .pop .cubes a {
+  width: 100%;
+}
+
+.bloc1 .pop .cubes a .apparts {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+.bloc1 .pop .cubes a .apparts img {
+  border-radius: 25px 0px 0px 25px;
+  width: 35%;
+  position: relative;
+  min-width: 150px;
+  min-height: 200px;
+}
+
+.bloc1 .pop .cubes a .apparts .ttappart {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+
+.bloc2{
+  margin-bottom: 60px;
+  ;
+}
+/* La partie 3 pour définir les activités*/
+.activite {
+  display: flex;
+  justify-content: space-between;
+  height: 600px;
+}
+
+.activite .column {
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 25px;
+}
+
+.activite .column .acts img {
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+  border-radius: 25px 25px 0px 0px;
+}
+
+.activite .column .acts {
+  height: 100%;
+  box-shadow: 0px 0px 10px 0px #E0E0E0;
+  border-radius: 25px;
+}
+
+.activite .column .acts h3 {
+  padding: 21px;
+  margin: 0px;
+}
+
+.activite .column.double .acts {
+  height: 48%;
+}
+
+/* Le footer de la page*/
+
+footer {
+  
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 50px;
+  display: flex;
+}
+
+footer .column {
+  width: 30%;
+}
+
+footer .column ul {
+  padding: 0px;
+  list-style-type: none;
+}
+
+footer .column ul li a {
+  color: black;
+  text-decoration: none;
+  line-height: 35px;
+}
+
+/* Ajustements pour les grands écrans  */
+@media (max-width: 900px) {
+  .filtre {
+    flex-wrap: wrap;
+}
+
+.bloc1 {
+    flex-direction: column;
+}
+
+
+.bloc1 .pop {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.bloc2 .activite {
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.bloc2 .activite .column {
+    width: 48%;
+}
+
+footer {
+    justify-content: space-between;
+}
+
+footer .column {
+    width: auto;
+}
+
+}
+
+@media only screen and (max-width: 900px) {
+.bloc1 .heberg {
+  width: 97%;
+}
+.bloc1 .pop {
+  margin-top: 23px;
+}
+}
+
+/*La partie responsive */
+@media only screen and (max-width: 650px) {
+    
+  header {
+    flex-direction: column;
+  }
+  
+  header .logo {
+    margin: auto;
+  }
+  
+  header nav ul {
+    margin: 0px -20px;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    margin: 0px;
+    border-top: none;
+    border-bottom: 2px solid;
+  }
+  
+  .recherche .boutton {
+    border-radius: 15px;
+  }
+  
+  .recherche .boutton .fa-search {
+    display: block;
+  }
+
+.filtre {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+
+
+  .cubes a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+  }
+ 
+  
+  
+  .bloc1 .pop .cubes a .apparts {
+    display: flex;
+  }
+  
+  
+  .bloc1 .pop .cubes a .apparts img {
+    border-radius: 25px 0px 0px 25px;
+    width: 100%;
+  }
+  
+  .cubes a {
+    width: 48%;
+    margin-bottom: 50px;
+  }
+  
+  .bloc1 .heberg {
+    width: 100%;
+  }
+  .bloc1 .pop {
+    width: 100%;
+   
+    margin: 30px auto;
+  }
+  
+  footer .column {
+    width: 42%;
+  }
+  footer {
+  
+    flex-wrap: wrap;
+  } 
+
+  .cubes a .apparts {
+ 
+    padding-bottom: 25px !important; 
+
+  } 
+
+  .filtre {
+    flex-direction: column;
+    width: 115%;
+    padding-bottom: 25px;
+    margin-left: 0;
+    align-items: flex-start;
+    padding-left: 6px;
+} 
+.filtre h2{
+  margin-left:15px
+}
+
+.detail1{
+  margin-bottom:30px
+}
+
+.sousfiltre_parent{
+  display:flex;
+  justify-content:flex-start;
+  flex-direction:row;
+  flex-wrap: wrap;
+
+}
+.sousfiltre{
+  margin: 4px 7px;
+}
+html, body{
+  overflow-x:hidden !important
+}
+
+main h1{
+  font-size:25px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+body {
+  padding: 0px 20px;
+}
+
+header {
+  flex-direction: column;
+}
+
+header .logo {
+  margin: auto;
+}
+
+header nav ul {
+  margin: 0px -20px;
+  padding: 0;
+}
+
+header nav ul li {
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+  margin: 0px;
+  border-top: none;
+  border-bottom: 2px solid;
+}
+
+.recherche .boutton {
+  border-radius: 15px;
+}
+.recherche .boutton .textrech{
+  display: none;
+ }
+
+
+.recherche .boutton .fa-search {
+  display: block;
+}
+
+.filtre {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.bloc1 .heberg {
+width: 100%;
+margin-bottom: 30px;
+order: 2;
+
+}
+
+.heberg .populaire {
+  order: 1;
+}
+
+.heberg .avanttitle .cubes {
+  flex-direction: column;
+}
+
+.heberg .avanttitle .cubes a {
+  width: 100%;
+}
+.bloc1 .pop .avanttitle {
+width: 90%;
+}
+.bloc2 .activite .column {
+  width: 100%;
+}
+
+.activite .column div,
+.activite .column.double div {
+  height: 250px;
+  margin-bottom: 20px;
+}
+
+footer {
+  flex-direction: column;
+}
+
+}
